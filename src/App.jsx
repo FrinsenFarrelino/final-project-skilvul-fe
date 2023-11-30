@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import AmbilSampah from "./pages/AmbilSampah";
 import Login from "./pages/auth/Login";
 import SignUp from "./pages/auth/SignUp";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
       </Routes>
+      <br />
+      <br />
+      <Footer />
     </>
   );
 }
