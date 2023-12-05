@@ -5,13 +5,9 @@ import KertasImage from "../assets/kertas.png";
 import AluminiumImage from "../assets/aluminium.png";
 import KacaImage from "../assets/kaca.png";
 import ElektronikImage from "../assets/elektronik.png";
+import { Link } from "react-router-dom";
 
 const AmbilSampah = () => {
-  const handleCari = (e) => {
-    e.preventDefault();
-    window.location.href = "../ambil-sampah/berhasil";
-  };
-
   return (
     <>
       <div className="pt-10 flex items-center justify-center">
@@ -110,12 +106,11 @@ const AmbilSampah = () => {
             />
             <br />
             <br />
-            <button
-              onClick={handleCari}
-              className="bg-green-800 w-full text-white py-2 px-4 rounded-md"
-            >
-              Cari
-            </button>
+            <Link to="/ambil-sampah/berhasil">
+              <button className="bg-green-800 w-full text-white py-2 px-4 rounded-md">
+                Cari
+              </button>
+            </Link>
             <br />
           </form>
         </div>

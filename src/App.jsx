@@ -9,6 +9,7 @@ import AmbilSampah from "./pages/AmbilSampah";
 import Login from "./pages/auth/Login";
 import SignUp from "./pages/auth/SignUp";
 import Footer from "./components/Footer";
+import PickupSuccess from "./pages/PickupSuccess";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/ambil-sampah" element={<AmbilSampah />} />
+        <Route path="/ambil-sampah/berhasil" element={<PickupSuccess />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
