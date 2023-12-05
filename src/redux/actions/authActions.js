@@ -9,7 +9,7 @@ import {
 export const login = (userData) => async (dispatch) => {
   try {
     const response = await axios.post(
-      "https://api-fs-skilvul.vercel.app/auth/login",
+      "https://api-fs-skilvul.vercel.app/api/auth/login",
       userData
     );
     dispatch(loginSuccess(response.data));
@@ -21,7 +21,7 @@ export const login = (userData) => async (dispatch) => {
 export const register = (userData) => async (dispatch) => {
   try {
     const response = await axios.post(
-      "https://api-fs-skilvul.vercel.app/auth/regist",
+      "https://api-fs-skilvul.vercel.app/api/auth/regist",
       userData
     ); // Sesuaikan dengan endpoint register
     dispatch(registerSuccess(response.data));
