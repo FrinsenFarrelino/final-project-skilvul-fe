@@ -11,6 +11,7 @@ import vehicle from "../assets/vehicle.svg";
 import agree from "../assets/agree.svg";
 import workshop from "../assets/workshop.svg";
 import warning from "../assets/warning.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -27,9 +28,11 @@ const Home = () => {
             </p>
           </div>
           <div>
-            <button className=" bg-[#B7EB8F] rounded-md px-3 py-2 mt-3 ml-7">
-              Ikuti Program
-            </button>
+            <Link to="/ambil-sampah">
+              <button className=" bg-[#B7EB8F] rounded-md px-3 py-2 mt-3 ml-7">
+                Ikuti Program
+              </button>
+            </Link>
           </div>
         </div>
         <div>
@@ -104,8 +107,8 @@ const Home = () => {
       <div className="flex w-full mt-10">
         <div className="flex flex-col w-1/2 ml-7">
           <h1 className="text-[40px] text-left pl-4">
-            <span className="text-[#95de64] font-semibold">Eco</span>Sampah hadir untuk
-            mengatasi masalah limbah!
+            <span className="text-[#95de64] font-semibold">Eco</span>Sampah
+            hadir untuk mengatasi masalah limbah!
           </h1>
           <p className="text-left mt-5 text-[20px] pl-4">
             Di sini, kami mengundang Anda untuk memasuki dunia pengelolaan
@@ -122,7 +125,9 @@ const Home = () => {
         </div>
       </div>
 
-      <h1 className="mt-10 text-[35px] font-semibold">Apa saja yang bisa kami lakukan?</h1>
+      <h1 className="mt-10 text-[35px] font-semibold">
+        Apa saja yang bisa kami lakukan?
+      </h1>
       <p className="mt-6 text-[20px]">
         Kami menyediakan beberapa fitur dalam website kami untuk mengatasi
         masalah limbah.
@@ -130,7 +135,9 @@ const Home = () => {
       <div className="flex items-center justify-between mt-8 ">
         <div className="flex flex-col items-center px-5">
           <img src={task} alt="" />
-          <h1 className="font-semibold text-[20px]">Pemantauan dan manajemen limbah terintegrasi</h1>
+          <h1 className="font-semibold text-[20px]">
+            Pemantauan dan manajemen limbah terintegrasi
+          </h1>
           <p className="mt-2 px-5">
             Kamu bisa mendapatkan gambaran atau pola dari limbah yang kamu
             hasilkan
@@ -138,14 +145,18 @@ const Home = () => {
         </div>
         <div className="flex flex-col items-center px-5">
           <img src={location} alt="" />
-          <h1 className="font-semibold text-[20px] pl-6">Pelacakan Lokasi Daur Ulang dan TPS</h1>
+          <h1 className="font-semibold text-[20px] pl-6">
+            Pelacakan Lokasi Daur Ulang dan TPS
+          </h1>
           <p className="mt-2 px-4">
             Kami akan memberitahu dimana saja lokasi daur ulang dan TPS terdekat
           </p>
         </div>
         <div className="flex flex-col items-center px-5">
           <img src={vehicle} alt="" />
-          <h1 className="font-semibold text-[20px] px-10">Pengambilan Limbah ke Rumah Kamu</h1>
+          <h1 className="font-semibold text-[20px] px-10">
+            Pengambilan Limbah ke Rumah Kamu
+          </h1>
           <p className="mt-2 px-3">
             Jika kamu sibuk keluar rumah, kamu bisa memanggil kami untuk
             mengambil limbahmu
@@ -155,7 +166,9 @@ const Home = () => {
       <div className="flex items-center justify-between mt-8 ml-8">
         <div className="flex flex-col items-center px-5">
           <img src={agree} alt="" />
-          <h1 className="font-semibold text-[20px]">Jual Beli Barang Daur Ulang</h1>
+          <h1 className="font-semibold text-[20px]">
+            Jual Beli Barang Daur Ulang
+          </h1>
           <p className="mt-2">
             Kamu bisa menjual atau membeli barang-barang daur ulang yang
             tersedia
@@ -171,7 +184,9 @@ const Home = () => {
         </div>
         <div className="flex flex-col items-center px-5">
           <img src={warning} alt="" />
-          <h1 className="font-semibold text-[20px]">Pelaporan Pelanggaran Pembuangan Ilegal</h1>
+          <h1 className="font-semibold text-[20px]">
+            Pelaporan Pelanggaran Pembuangan Ilegal
+          </h1>
           <p className="mt-2">
             Jika ada pelanggaran pembuangan limbah sembarangan, kamu bisa
             melaporkannya kepada kami
@@ -179,7 +194,11 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <button className="bg-[#B7EB8F] rounded-md px-3 py-2 mt-3 ml-7  ">Pelajari Lebih Lanjut</button>
+        <Link to="/about">
+          <button className="bg-[#B7EB8F] rounded-md px-3 py-2 mt-3 ml-7  ">
+            Pelajari Lebih Lanjut
+          </button>
+        </Link>
       </div>
     </section>
   );
